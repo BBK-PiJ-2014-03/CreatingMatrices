@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Matrix {
     
     private int[][] twoDIntArray;
@@ -66,6 +68,19 @@ public class Matrix {
             }
         }
     }
+    
+    public String toString() {
+        
+        String userString = Arrays.deepToString(this.getMatrix());
+        
+        return userString;
+    }
+    
+    public void prettyPrint() {
+        
+    }
+
+        
     
     
     
