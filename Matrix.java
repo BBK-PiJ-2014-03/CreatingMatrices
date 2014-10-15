@@ -77,7 +77,12 @@ public class Matrix {
     }
     
     public void prettyPrint() {
-        
+        for (int colCount = 0; colCount < twoDIntArray[0].length; colCount++) {
+            System.out.println();
+            for (int rowCount = 0; rowCount < twoDIntArray.length; rowCount++) {
+                System.out.print(twoDIntArray[colCount][rowCount] + "\t");
+            }
+        }
     }
 
         
