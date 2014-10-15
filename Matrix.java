@@ -28,4 +28,42 @@ public class Matrix {
         }
     }
     
+    public void setRow(int row, String num) {
+        if (row > twoDIntArray[0].length-1) {
+            return;
+        }
+            
+        String newString = "";
+        for (int count = 0; count < num.length()-1;count++) {
+            if (Character.isDigit(num.charAt(count))) {
+                newString += num.charAt(count);
+            }
+        }
+        if (newString.length()-1 > twoDIntArray.length-1) {
+            return;
+        }
+        
+        else {
+            for (int count = 0; count < twoDIntArray[row].length-1; count++) {
+                twoDIntArray[row][count] = Character.getNumericValue(newString.charAt(count));
+            }
+        }
+    }
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }
