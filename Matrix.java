@@ -47,7 +47,25 @@ public class Matrix {
         }
     }
     
+    public void setColumn(int col, String numbers) {
+        
+        if (col > twoDIntArray.length-1) {
+            return;
+        }
+            
+        String[] tokens = numbers.split(",");
+        
+        
+        if (tokens.length > twoDIntArray[0].length) {
+            return;
+        }
     
+        else {
+            for (int count = 0; count < twoDIntArray.length; count++) {
+                twoDIntArray[count][col] = Integer.parseInt(tokens[count]);
+            }
+        }
+    }
     
     
     
