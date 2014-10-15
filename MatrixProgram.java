@@ -5,7 +5,7 @@ public class MatrixProgram {
         
         Matrix userMatrix = new Matrix(5,5);
         
-        userMatrix.setElement(0,5,5);
+        /* userMatrix.setElement(0,5,5); */
         
         userMatrix.setRow(0, "1,2,3,4,5");
         

@@ -33,23 +33,19 @@ public class Matrix {
             return;
         }
             
-        String newString = "";
-        for (int count = 0; count < num.length()-1;count++) {
-            if (Character.isDigit(num.charAt(count))) {
-                newString += num.charAt(count);
-            }
-        }
-        if (newString.length()-1 > twoDIntArray.length-1) {
+        String[] tokens = num.split(",");
+        
+        
+        if (tokens.length > twoDIntArray.length) {
             return;
         }
         
         else {
-            for (int count = 0; count < twoDIntArray[row].length-1; count++) {
-                twoDIntArray[row][count] = Character.getNumericValue(newString.charAt(count));
+            for (int count = 0; count < twoDIntArray[0].length; count++) {
+                twoDIntArray[row][count] = Integer.parseInt(tokens[count]);
             }
         }
     }
-        
     
     
     
