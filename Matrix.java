@@ -16,4 +16,16 @@ public class Matrix {
         return twoDIntArray;
     }
     
+    public void setElement(int col, int row, int modify) {
+        if (col > twoDIntArray[0].length-1) {
+            return;
+        }
+        if (row > twoDIntArray.length-1) {
+            return;
+        }
+        else {
+            twoDIntArray[col][row] = modify;
+        }
+    }
+    
 }
